@@ -1,0 +1,6 @@
+header {
+    background-image: url(../images/header.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+}
