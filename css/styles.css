@@ -1,6 +1,96 @@
+/*CSS general de elementos*/
+
+body {
+    background-color: #FDF8F2;
+    color: #667F61;
+    font: 400 20px "TikTok Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playwrite DE Grund', cursive;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2;
+}
+
+h2 {
+    color: #667F61;
+    font-size: 42px;
+}
+
+h3 {
+    color: #667F61;
+    font-size: 26px;
+}
+
+a {
+    font-family: 'Playwrite DE Grund', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+}
+a:any-link {
+    color: white;
+}
+a:-webkit-any-link {
+    color: white;
+}
+a:-moz-any-link {
+    color: white;
+}
+a:hover {
+    color: #343434;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px); /* Background blur effect (more pixels = more blur) */
+    -webkit-backdrop-filter: blur(8px); /* For some old web browser compatibility */
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 header {
-    background-image: url(../images/header.webp);
+    background-image: 
+        linear-gradient(
+            to bottom, /* From top to down */
+            rgba(0, 0, 0, 0.4) 0%, /* Start: Transparent/Dark on the image */
+            rgba(0, 0, 0, 0.2) 85%, /* Middle point */
+            #FDF8F2 100% /* Final: Body background color */
+        ),
+        url(../images/header.webp); /* Background image */
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 750px;
+    background-size: cover; 
+    background-position: center;
+    aspect-ratio: 2 / 1;
+    max-height: 750px; 
+}
+
+/*CSS IDs y Clases*/
+
+#menu-logo {
+    vertical-align: middle;
+}
+
+#fates {
+    justify-items: center;
+}
+
+#fates h2 {
+    text-align: center;
+    width: 50%;
+}
+
+#fates h3 {
+    text-align: center;
 }
