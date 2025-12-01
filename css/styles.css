@@ -71,9 +71,8 @@ header {
         url(../images/header.webp); /* Background image */
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position: center;
-    aspect-ratio: 2 / 1;
-    max-height: 750px; 
+    background-position: center top;
+    min-height: 750px;
 }
 
 /*CSS IDs y Clases*/
