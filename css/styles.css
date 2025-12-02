@@ -140,3 +140,21 @@ header {
 #fates h3 {
     text-align: center;
 }
+
+.grid-fates {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.destiny-card {
+    width: 400px;
+    height: 200px;
+    background-color: #343434;
+    border-radius: 15px;
+    justify-content: center;
+    align-content: center;
+}
