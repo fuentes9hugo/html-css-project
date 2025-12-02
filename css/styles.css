@@ -148,13 +148,45 @@ header {
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
+    align-content: space-around;
 }
 
 .destiny-card {
     width: 400px;
     height: 200px;
-    background-color: #343434;
+
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+
     border-radius: 15px;
     justify-content: center;
     align-content: center;
+    font-size: 32px;
+    
+    z-index: 2;
+}
+
+.destiny-card::before {
+content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.4s ease;
+
+    z-index: 1;
+}
+
+.destiny-card:hover::before {
+  opacity: 0;
+}
+
+.destiny-card h4 {
+    position: relative;
+    z-index: 2;
+    color: white;
 }
