@@ -152,7 +152,7 @@ header {
 }
 
 .destiny-card {
-    width: 400px;
+    width: calc(33.3333% - 33.33px);
     height: 200px;
 
     position: relative;
@@ -172,10 +172,10 @@ header {
 }
 
 .destiny-card::before {
-content: "";
+    content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     transition: opacity 0.4s ease;
 
     z-index: 1;
