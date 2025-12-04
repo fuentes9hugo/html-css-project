@@ -128,8 +128,8 @@ header {
 
 #fates {
     justify-items: center;
-    margin-top: 500px;
-    padding: 0 100px 0 100px;
+    margin-top: 300px;
+    padding: 100px 100px 0 100px;
 }
 
 #fates h2 {
@@ -204,6 +204,7 @@ header {
 }
 
 .grid-notes div {
+    background-color: white;
     border-radius: 10px;
     height: auto;
     padding: 10px;
@@ -225,10 +226,12 @@ header {
     grid-column: 1/4;
     grid-row: 1/2;
     background-image: url(../images/como.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #note2 {
-    background-color: white;
     grid-column: 4/5;
     grid-row: 1/2;
 }
@@ -249,19 +252,20 @@ header {
 }
 
 #note4 {
-    background-color: white;
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
 #note5 {
     background-image: url(../images/valencia.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
 #note6 {
-    background-color: white;
     grid-column: 3/5;
     grid-row: 2/3;
 }
