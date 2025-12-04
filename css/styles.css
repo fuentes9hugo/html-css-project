@@ -207,7 +207,7 @@ header {
 }
 
 .grid-notes div {
-    background-color: #F2EBE3;
+    background-color: white;
     border-radius: 10px;
     height: auto;
     padding: 10px;
@@ -275,7 +275,8 @@ header {
 
 /*Contact section*/
 #contact {
-    margin-top: 300px;
+    padding-top: 300px;
+    margin-top: 100px;
     justify-items: center;
 }
 
@@ -283,12 +284,13 @@ header {
     position: relative;
     overflow: visible;
 
-    background-color: #353535;
+    background-color: white;
     width: 100%;
     max-width: 800px;
     height: auto;
+    border-radius: 10px;
 
-    padding: 200px 100px 0 100px;
+    padding: 220px 100px 100px 100px;
     box-sizing: border-box; /*IMPORTANT -> This tells the browser: when calculating the element's total width, the padding and border should be included inside the defined width and height*/
 }
 
@@ -300,8 +302,93 @@ header {
     height: auto;
 
     border-radius: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #image-form img {
     border-radius: 10px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#contact-form h2 {
+    font-size: 32px;
+    padding-bottom: 50px;
+}
+
+.item-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-form label {
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 16px;
+    color: #667F61;
+    margin-bottom: 5px;
+}
+
+.item-form input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 18px;
+    color: #343434;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.item-form input:focus {
+    border-bottom: 1px solid #667F61;
+}
+
+.item-form textarea {
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: "TikTok Sans", sans-serif;
+    font-size: 16px;
+    color: #343434;
+    resize: none;
+    outline: none;
+}
+
+.item-form textarea:focus {
+    border-color: #667F61;
+}
+
+.submit-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: #667F61;
+    color: white;
+    font-family: 'Playwrite DE Grund', cursive;
+    font-size: 18px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #4e634a;
 }
