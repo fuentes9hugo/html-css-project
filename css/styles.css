@@ -83,6 +83,35 @@ header {
     justify-items: center;
 }
 
+/*Footer section*/
+footer {
+    margin-top: 150px;
+    background-color: #F2EBE3;
+    background: linear-gradient(
+        to bottom,
+        #FDF8F2 0%,
+        #F2EBE3 20%
+    );
+    padding:100px 20px 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+footer h4 {
+    font-size: 24px;
+    color: #667F61;
+}
+
 /*CSS IDs y Clases*/
 
 #menu-logo {
