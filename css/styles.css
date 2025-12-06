@@ -424,3 +424,225 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #4e634a;
 }
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 { font-size: 24px; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 20px; }
+
+    nav {
+        height: auto;
+        padding: 10px 0;
+    }
+    nav ul li {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    header {
+        min-height: 500px;
+    }
+
+    #header-card {
+        flex-direction: column;
+        width: 85%;
+        max-width: calc(100% - 40px);
+        height: auto;
+        bottom: -120px;
+        padding: 20px;
+        gap: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header-card-content h1 {
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .header-card-content p {
+        font-size: 14px;
+    }
+
+    .header-card-image {
+        max-height: 200px;
+    }
+
+    .header-card-image img {
+        border-radius: 0 0 15px 15px;
+        max-height: 200px;
+    }
+
+    #fates {
+        margin-top: 150px;
+        padding: 50px 20px 0 20px;
+        box-sizing: border-box;
+    }
+
+    #fates h2 {
+        width: 100%;
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-fates {
+        margin-top: 40px;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .destiny-card {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 140px;
+        height: 180px;
+        font-size: 20px;
+    }
+
+    #fates-notes {
+        padding: 100px 20px 0 20px;
+        box-sizing: border-box;
+    }
+
+    .grid-notes {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #note1 {
+        grid-column: 1;
+        grid-row: auto;
+        height: 180px;
+    }
+
+    #note2 {
+        grid-column: 1;
+        grid-row: auto;
+        padding: 15px;
+    }
+
+    #note3 {
+        grid-column: 1;
+        grid-row: auto;
+        height: 180px;
+        padding: 0;
+    }
+
+    #note3 video {
+        height: 100%;
+    }
+
+    #note4 {
+        grid-column: 1;
+        grid-row: auto;
+        padding: 15px;
+    }
+
+    #note5 {
+        grid-column: 1;
+        grid-row: auto;
+        height: 180px;
+    }
+
+    #note6 {
+        grid-column: 1;
+        grid-row: auto;
+        padding: 15px;
+    }
+
+    .grid-notes div {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .grid-notes h3 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .grid-notes p {
+        font-size: 14px;
+        margin: 8px 0 0 0;
+    }
+
+    #contact {
+        padding: 150px 20px 0 20px;
+        margin-top: 50px;
+        box-sizing: border-box;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 130px 20px 50px 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    #image-form {
+        position: absolute;
+        top: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 150px;
+    }
+
+    #image-form img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+
+    #contact-form h2 {
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+
+    .item-form {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .item-form label {
+        font-size: 14px;
+    }
+
+    .item-form input, .item-form textarea {
+        font-size: 16px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 8px 30px;
+    }
+
+    footer {
+        margin-top: 80px;
+        padding: 60px 20px 40px 20px;
+        box-sizing: border-box;
+    }
+
+    footer img {
+        width: 100px;
+    }
+
+    footer h4 {
+        font-size: 20px;
+    }
+}
